@@ -7,12 +7,13 @@ let package = Package(
     platforms: [
         .iOS(.v9),
         .tvOS(.v9),
-        .macOS(.v10_10),
+        .macOS(.v10_14),
         .watchOS(.v2)
     ],
     products: [
         .library(
             name: "HTTPParserC",
+            type: .dynamic,
             targets: ["HTTPParserC"]
         )
     ],
